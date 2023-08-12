@@ -6,6 +6,7 @@ export const input = async (question?: string) => {
         output: process.stdout,
     });
 
+    console.log('test');
     const answer = await rl.question(question ?? "");
     rl.close();
     return answer;
